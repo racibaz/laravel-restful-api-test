@@ -1,0 +1,478 @@
+{
+    "variable": [
+        {
+            "id": "baseUrl",
+            "key": "baseUrl",
+            "type": "string",
+            "name": "string",
+            "value": "apitest.test"
+        }
+    ],
+    "info": {
+        "name": "Api Test Example With XDebug Code Coverage",
+        "_postman_id": "8089f72d-4286-4a18-bdaf-b2ccdb15f141",
+        "description": "Api Test Example With XDebug Code Coverage",
+        "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
+    },
+    "item": [
+        {
+            "name": "Endpoints",
+            "description": "",
+            "item": [
+                {
+                    "name": "Display a listing of the resource.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/categories",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/v1\/categories"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "59"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "[{\"id\":1,\"name\":\"Est animi dolorem cum minima ut qui. Enim ducimus fuga a dolorum velit. Perferendis quas ut aut provident. Fuga aliquam et alias.\",\"description\":\"Et vel consectetur omnis corrupti delectus. Dolorem quia sit consequatur tenetur modi architecto autem. Assumenda in vero aut minima laborum qui iste.\"},{\"id\":2,\"name\":\"Nam qui debitis illum sequi temporibus placeat et. Reiciendis ullam ea dolorum quae quia aspernatur consequatur nulla. Similique minus at iure repellendus.\",\"description\":\"Et voluptas sit dolorem distinctio nisi possimus nam sit. Explicabo fugiat commodi est nobis eos at quia sed. Ut qui est cupiditate esse quo dicta molestiae.\"},{\"id\":3,\"name\":\"Sit culpa exercitationem ducimus eum. Consectetur unde ut officiis maiores eveniet. Porro facilis consequatur ut quaerat inventore ut voluptatum.\",\"description\":\"Ipsum sint enim accusamus fuga sint at dolorem. Delectus quod temporibus odit rerum et. Veritatis itaque consequuntur nesciunt.\"},{\"id\":4,\"name\":\"Voluptas rerum error expedita est sit voluptates. Nulla minus aspernatur asperiores dolorum officiis temporibus. Eum omnis aut saepe molestiae quibusdam.\",\"description\":\"Ea placeat veniam aut dolor non quis. Adipisci et soluta rerum distinctio reiciendis. Nihil officia pariatur est numquam. Ad labore ab recusandae.\"},{\"id\":5,\"name\":\"Aut quaerat quia similique est quibusdam. Neque libero vero voluptate esse illo ut. Ut qui est sit dolore.\",\"description\":\"Qui fugit recusandae atque modi aut velit. Similique sunt aut qui possimus cumque sunt ex eos. Natus corrupti ducimus amet atque amet quaerat rerum.\"},{\"id\":6,\"name\":\"Dolorum cum dicta perspiciatis tempora corrupti dolores est quia. Deleniti magnam alias eius deleniti. Incidunt ea vero perspiciatis est deserunt fuga nihil. Pariatur magnam quasi autem et.\",\"description\":\"Et quia rerum totam dolorem aut est sed. Officia fugiat ut omnis magnam.\"},{\"id\":7,\"name\":\"Voluptatum amet sequi vel. Illum ipsam rem debitis consequatur nisi aut quo. Inventore expedita molestiae voluptates deleniti.\",\"description\":\"Qui quibusdam dolore ut. Consectetur eius accusamus ex reprehenderit itaque. Voluptas explicabo nemo ab et repellat molestias aliquam.\"},{\"id\":8,\"name\":\"Voluptas cum aut sint distinctio consequatur sint rerum. Illo reiciendis autem voluptatem quis eligendi omnis. Sunt quidem et ex autem.\",\"description\":\"Perspiciatis placeat doloremque assumenda voluptatibus. Nisi quibusdam saepe et illo voluptate eum. Porro sunt placeat earum odio aut quibusdam et. Ab et officiis quo aut veniam eum quae.\"},{\"id\":9,\"name\":\"Vel et est ullam ut sed. Beatae nisi et officiis optio voluptas. Deserunt dicta optio dolorem et deserunt a itaque.\",\"description\":\"Itaque tempore quis ut dolorum fugiat. Ducimus et quia deleniti. Rerum id aut accusamus omnis occaecati exercitationem illo consequuntur.\"},{\"id\":10,\"name\":\"Aut corrupti vero nemo veritatis. Sed nesciunt excepturi ad et. Et beatae ut sint cumque deserunt aut cumque asperiores. Placeat sit doloremque debitis molestias velit totam.\",\"description\":\"Sed aut aperiam reiciendis praesentium voluptatum eligendi. Assumenda possimus soluta iusto quaerat illo. Inventore et dolor dicta enim deserunt ipsa dolore exercitationem.\"},{\"id\":11,\"name\":\"At quo repudiandae placeat. Occaecati quidem deleniti eaque recusandae. Dignissimos reprehenderit itaque ut vero. Iure ut eos aut.\",\"description\":\"Praesentium eos quaerat qui. Rerum aperiam nostrum minus. Laborum quidem id qui fugit pariatur.\"},{\"id\":12,\"name\":\"Nihil laudantium laboriosam ea animi. Quo corporis temporibus delectus molestiae. Quae dolore id ea est molestiae quia. Delectus quia ducimus dicta rerum qui nobis id. Totam sit rerum dolore qui.\",\"description\":\"Corporis debitis ipsam architecto sed qui. Aut exercitationem odit ut et. Fuga voluptatem reprehenderit est ullam ratione fuga. Qui error quia perspiciatis.\"},{\"id\":13,\"name\":\"At ut voluptas sunt necessitatibus corrupti voluptas vel. Similique ut eos sequi porro. Voluptatibus sapiente minus ad nihil sit est. Omnis fugit autem ad minus.\",\"description\":\"Occaecati vel nesciunt est totam dolores earum quae omnis. Et et neque et veniam itaque.\"},{\"id\":14,\"name\":\"Atque quam totam ipsum sequi eligendi est pariatur. Nesciunt voluptate natus sed vel ullam. Natus odio dolor ratione.\",\"description\":\"Tenetur ea suscipit sint aut. Unde rerum consequatur quod ut hic sit saepe. Quae laboriosam architecto dolor quasi. Dolores eveniet repellendus sunt. Eaque repellat error omnis ab eum est facilis.\"},{\"id\":15,\"name\":\"Quidem quisquam ut architecto odio qui aut iste. Minima dolor minima sit natus. Tempora voluptatum sequi eos maiores. Earum tenetur quos et deleniti odit iure.\",\"description\":\"Asperiores alias ratione aut est laudantium quibusdam. Sunt amet quam vel eveniet. Ut in expedita magni quo sit eligendi. Unde fugiat nulla nemo delectus aut.\"}]",
+                            "name": null
+                        }
+                    ]
+                },
+                {
+                    "name": "Store a newly created resource in storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/categories",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/v1\/categories"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Display the specified resource.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/categories\/:id",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/v1\/categories\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "8",
+                                    "description": "The ID of the category."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "58"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "{\"id\":1,\"name\":\"Est animi dolorem cum minima ut qui. Enim ducimus fuga a dolorum velit. Perferendis quas ut aut provident. Fuga aliquam et alias.\",\"description\":\"Et vel consectetur omnis corrupti delectus. Dolorem quia sit consequatur tenetur modi architecto autem. Assumenda in vero aut minima laborum qui iste.\"}",
+                            "name": null
+                        }
+                    ]
+                },
+                {
+                    "name": "Update the specified resource in storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/categories\/:id",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/v1\/categories\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "15",
+                                    "description": "The ID of the category."
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Remove the specified resource from storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/categories\/:id",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/v1\/categories\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the category."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Display a listing of the resource.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/books",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/v1\/books"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "57"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "{\"data\":[{\"id\":1,\"name\":\"Natus velit nihil.\",\"description\":\"Vero iste molestiae cumque possimus quo inventore beatae. Voluptatum eum expedita est enim. Pariatur et nisi reiciendis asperiores.\",\"ISBN\":\"9795621972515\"},{\"id\":2,\"name\":\"Eum voluptas.\",\"description\":\"Perferendis ullam sed eligendi dolorem qui non aspernatur. Quidem natus tempora non omnis laboriosam temporibus. Culpa et earum debitis modi.\",\"ISBN\":\"9793111699096\"},{\"id\":3,\"name\":\"Ad ea aut hic odit.\",\"description\":\"Voluptas praesentium provident non provident id. Dolores natus consectetur itaque neque nemo sunt. Eveniet quisquam animi architecto illum ut exercitationem. Nisi nostrum sit et.\",\"ISBN\":\"9784316761756\"},{\"id\":4,\"name\":\"Ad rerum ut alias.\",\"description\":\"Explicabo nulla impedit corporis officia enim. Ducimus tempore cupiditate ut non. Assumenda dolores quos exercitationem sed. Vitae id architecto sapiente fuga.\",\"ISBN\":\"9784995509199\"},{\"id\":5,\"name\":\"Non deleniti ea.\",\"description\":\"Laudantium magni sint quis nostrum repudiandae. Fuga dolores cumque blanditiis molestias tempore illum. Sint molestiae nemo dolor ex. Omnis voluptates quo soluta quas.\",\"ISBN\":\"9794564871794\"},{\"id\":6,\"name\":\"Voluptas.\",\"description\":\"Voluptas molestias est totam in magni corporis. Voluptatem cumque est minus magni nam non velit. Provident molestiae qui magnam deleniti dicta consectetur.\",\"ISBN\":\"9782111454675\"},{\"id\":7,\"name\":\"Nam aut est aliquam.\",\"description\":\"Est inventore ipsum veritatis voluptas. Iusto dolor quae nesciunt ut. Voluptatem autem illum aut consectetur et. Voluptate aut iste veritatis quis et.\",\"ISBN\":\"9796909296842\"},{\"id\":8,\"name\":\"Animi inventore.\",\"description\":\"Quo illum aut vel vel nostrum. Porro quae dolorem consequatur vitae. Quisquam neque deleniti ducimus. In quas voluptatem porro laborum.\",\"ISBN\":\"9791711259689\"},{\"id\":9,\"name\":\"Ad corporis.\",\"description\":\"Omnis qui vitae dolores iusto quasi dolores eligendi atque. Neque deserunt ex sit sed aliquid saepe aspernatur ipsa. Assumenda veritatis laboriosam qui alias.\",\"ISBN\":\"9785779881784\"},{\"id\":10,\"name\":\"Explicabo tempora.\",\"description\":\"Minus aspernatur laudantium quos. Ab sapiente rem perspiciatis atque. Velit minus laudantium aut. Est ipsa sed enim delectus ducimus aspernatur. Fugiat ea quis eum et quia.\",\"ISBN\":\"9794481073523\"},{\"id\":11,\"name\":\"Quis voluptates.\",\"description\":\"Omnis ad et nulla aliquid. Magnam neque dolores expedita possimus provident. Ut voluptates aliquam non molestiae.\",\"ISBN\":\"9781719048897\"},{\"id\":12,\"name\":\"Qui repellendus.\",\"description\":\"Vero possimus reiciendis blanditiis. Ipsum vel eligendi at nisi reprehenderit incidunt qui. Qui temporibus nihil ullam est. Blanditiis eius dolor magnam.\",\"ISBN\":\"9795271847447\"},{\"id\":13,\"name\":\"Quam et nesciunt.\",\"description\":\"Quod voluptatem cupiditate corrupti vero porro fugit. Aliquam eum quia voluptatem sunt sunt. Eos accusamus commodi recusandae nulla aperiam.\",\"ISBN\":\"9788664561303\"},{\"id\":14,\"name\":\"Ea est doloribus.\",\"description\":\"Sapiente nisi vel esse deserunt placeat rerum. Dolores et corporis mollitia molestiae. Voluptatem minus amet quia repudiandae vel.\",\"ISBN\":\"9793287398991\"},{\"id\":15,\"name\":\"Similique placeat.\",\"description\":\"Voluptates sint et occaecati. Unde aut inventore quis ut at voluptatem.\",\"ISBN\":\"9782599673414\"}],\"links\":{\"first\":\"http:\\\/\\\/apitest.test\\\/api\\\/v1\\\/books?page=1\",\"last\":\"http:\\\/\\\/apitest.test\\\/api\\\/v1\\\/books?page=2\",\"prev\":null,\"next\":\"http:\\\/\\\/apitest.test\\\/api\\\/v1\\\/books?page=2\"},\"meta\":{\"current_page\":1,\"from\":1,\"last_page\":2,\"links\":[{\"url\":null,\"label\":\"&laquo; Previous\",\"active\":false},{\"url\":\"http:\\\/\\\/apitest.test\\\/api\\\/v1\\\/books?page=1\",\"label\":\"1\",\"active\":true},{\"url\":\"http:\\\/\\\/apitest.test\\\/api\\\/v1\\\/books?page=2\",\"label\":\"2\",\"active\":false},{\"url\":\"http:\\\/\\\/apitest.test\\\/api\\\/v1\\\/books?page=2\",\"label\":\"Next &raquo;\",\"active\":false}],\"path\":\"http:\\\/\\\/apitest.test\\\/api\\\/v1\\\/books\",\"per_page\":15,\"to\":15,\"total\":20}}",
+                            "name": null
+                        }
+                    ]
+                },
+                {
+                    "name": "Store a newly created resource in storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/books",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/v1\/books"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Display the specified resource.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/books\/:id",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/v1\/books\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "19",
+                                    "description": "The ID of the book."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "56"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "{\"id\":1,\"name\":\"Natus velit nihil.\",\"description\":\"Vero iste molestiae cumque possimus quo inventore beatae. Voluptatum eum expedita est enim. Pariatur et nisi reiciendis asperiores.\",\"ISBN\":\"9795621972515\"}",
+                            "name": null
+                        }
+                    ]
+                },
+                {
+                    "name": "Update the specified resource in storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/books\/:id",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/v1\/books\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "5",
+                                    "description": "The ID of the book."
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Remove the specified resource from storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/books\/:id",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/v1\/books\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "2",
+                                    "description": "The ID of the book."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        }
+    ],
+    "auth": {
+        "type": "noauth"
+    }
+}

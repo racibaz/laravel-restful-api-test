@@ -1,0 +1,1180 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Api Test Example With XDebug Code Coverage</title>
+
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../docs/css/theme-default.style.css" media="screen">
+    <link rel="stylesheet" href="../docs/css/theme-default.print.css" media="print">
+    <script src="../docs/js/theme-default-3.8.0.js"></script>
+
+    <link rel="stylesheet"
+          href="//unpkg.com/@highlightjs/cdn-assets@10.7.2/styles/obsidian.min.css">
+    <script src="//unpkg.com/@highlightjs/cdn-assets@10.7.2/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <script src="//cdn.jsdelivr.net/npm/lodash@4.17.10/lodash.min.js"></script>
+    <script>
+        var baseUrl = "http://apitest.test";
+    </script>
+    <script src="../docs/js/tryitout-3.8.0.js"></script>
+
+</head>
+
+<body data-languages="[&quot;bash&quot;,&quot;javascript&quot;]">
+<a href="#" id="nav-button">
+      <span>
+        MENU
+        <img src="../docs/images/navbar.png" alt="navbar-image" />
+      </span>
+</a>
+<div class="tocify-wrapper">
+                <div class="lang-selector">
+                            <a href="#" data-language-name="bash">bash</a>
+                            <a href="#" data-language-name="javascript">javascript</a>
+                    </div>
+        <div class="search">
+        <input type="text" class="search" id="input-search" placeholder="Search">
+    </div>
+    <ul class="search-results"></ul>
+
+    <ul id="toc">
+    </ul>
+
+            <ul class="toc-footer" id="toc-footer">
+                            <li><a href="../docs/collection.json">View Postman collection</a></li>
+                            <li><a href="../docs/openapi.yaml">View OpenAPI spec</a></li>
+                            <li><a href="http://github.com/knuckleswtf/scribe">Documentation powered by Scribe ✍</a></li>
+                    </ul>
+            <ul class="toc-footer" id="last-updated">
+            <li>Last updated: July 30 2021</li>
+        </ul>
+</div>
+<div class="page-wrapper">
+    <div class="dark-box"></div>
+    <div class="content">
+        <h1>Introduction</h1>
+<p>Api Test Example With XDebug Code Coverage</p>
+<p>This documentation aims to provide all the information you need to work with our API.</p>
+<aside>As you scroll, you'll see code examples for working with the API in different programming languages in the dark area to the right (or as part of the content on mobile).
+You can switch the language used with the tabs at the top right (or from the nav menu at the top left on mobile).</aside>
+<blockquote>
+<p>Base URL</p>
+</blockquote>
+<pre><code class="language-yaml">http://apitest.test</code></pre>
+
+        <h1>Authenticating requests</h1>
+<p>This API is not authenticated.</p>
+
+        <h1 id="endpoints">Endpoints</h1>
+
+    
+
+            <h2 id="endpoints-GETapi-v1-categories">Display a listing of the resource.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETapi-v1-categories">
+<blockquote>Example request:</blockquote>
+
+
+<pre><code class="language-bash">curl --request GET \
+    --get "http://apitest.test/api/v1/categories" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre>
+
+<pre><code class="language-javascript">const url = new URL(
+    "http://apitest.test/api/v1/categories"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre>
+</span>
+
+<span id="example-responses-GETapi-v1-categories">
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary>
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 59
+access-control-allow-origin: *
+ </code></pre>
+        </details>         <pre>
+
+<code class="language-json">[
+    {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;Est animi dolorem cum minima ut qui. Enim ducimus fuga a dolorum velit. Perferendis quas ut aut provident. Fuga aliquam et alias.&quot;,
+        &quot;description&quot;: &quot;Et vel consectetur omnis corrupti delectus. Dolorem quia sit consequatur tenetur modi architecto autem. Assumenda in vero aut minima laborum qui iste.&quot;
+    },
+    {
+        &quot;id&quot;: 2,
+        &quot;name&quot;: &quot;Nam qui debitis illum sequi temporibus placeat et. Reiciendis ullam ea dolorum quae quia aspernatur consequatur nulla. Similique minus at iure repellendus.&quot;,
+        &quot;description&quot;: &quot;Et voluptas sit dolorem distinctio nisi possimus nam sit. Explicabo fugiat commodi est nobis eos at quia sed. Ut qui est cupiditate esse quo dicta molestiae.&quot;
+    },
+    {
+        &quot;id&quot;: 3,
+        &quot;name&quot;: &quot;Sit culpa exercitationem ducimus eum. Consectetur unde ut officiis maiores eveniet. Porro facilis consequatur ut quaerat inventore ut voluptatum.&quot;,
+        &quot;description&quot;: &quot;Ipsum sint enim accusamus fuga sint at dolorem. Delectus quod temporibus odit rerum et. Veritatis itaque consequuntur nesciunt.&quot;
+    },
+    {
+        &quot;id&quot;: 4,
+        &quot;name&quot;: &quot;Voluptas rerum error expedita est sit voluptates. Nulla minus aspernatur asperiores dolorum officiis temporibus. Eum omnis aut saepe molestiae quibusdam.&quot;,
+        &quot;description&quot;: &quot;Ea placeat veniam aut dolor non quis. Adipisci et soluta rerum distinctio reiciendis. Nihil officia pariatur est numquam. Ad labore ab recusandae.&quot;
+    },
+    {
+        &quot;id&quot;: 5,
+        &quot;name&quot;: &quot;Aut quaerat quia similique est quibusdam. Neque libero vero voluptate esse illo ut. Ut qui est sit dolore.&quot;,
+        &quot;description&quot;: &quot;Qui fugit recusandae atque modi aut velit. Similique sunt aut qui possimus cumque sunt ex eos. Natus corrupti ducimus amet atque amet quaerat rerum.&quot;
+    },
+    {
+        &quot;id&quot;: 6,
+        &quot;name&quot;: &quot;Dolorum cum dicta perspiciatis tempora corrupti dolores est quia. Deleniti magnam alias eius deleniti. Incidunt ea vero perspiciatis est deserunt fuga nihil. Pariatur magnam quasi autem et.&quot;,
+        &quot;description&quot;: &quot;Et quia rerum totam dolorem aut est sed. Officia fugiat ut omnis magnam.&quot;
+    },
+    {
+        &quot;id&quot;: 7,
+        &quot;name&quot;: &quot;Voluptatum amet sequi vel. Illum ipsam rem debitis consequatur nisi aut quo. Inventore expedita molestiae voluptates deleniti.&quot;,
+        &quot;description&quot;: &quot;Qui quibusdam dolore ut. Consectetur eius accusamus ex reprehenderit itaque. Voluptas explicabo nemo ab et repellat molestias aliquam.&quot;
+    },
+    {
+        &quot;id&quot;: 8,
+        &quot;name&quot;: &quot;Voluptas cum aut sint distinctio consequatur sint rerum. Illo reiciendis autem voluptatem quis eligendi omnis. Sunt quidem et ex autem.&quot;,
+        &quot;description&quot;: &quot;Perspiciatis placeat doloremque assumenda voluptatibus. Nisi quibusdam saepe et illo voluptate eum. Porro sunt placeat earum odio aut quibusdam et. Ab et officiis quo aut veniam eum quae.&quot;
+    },
+    {
+        &quot;id&quot;: 9,
+        &quot;name&quot;: &quot;Vel et est ullam ut sed. Beatae nisi et officiis optio voluptas. Deserunt dicta optio dolorem et deserunt a itaque.&quot;,
+        &quot;description&quot;: &quot;Itaque tempore quis ut dolorum fugiat. Ducimus et quia deleniti. Rerum id aut accusamus omnis occaecati exercitationem illo consequuntur.&quot;
+    },
+    {
+        &quot;id&quot;: 10,
+        &quot;name&quot;: &quot;Aut corrupti vero nemo veritatis. Sed nesciunt excepturi ad et. Et beatae ut sint cumque deserunt aut cumque asperiores. Placeat sit doloremque debitis molestias velit totam.&quot;,
+        &quot;description&quot;: &quot;Sed aut aperiam reiciendis praesentium voluptatum eligendi. Assumenda possimus soluta iusto quaerat illo. Inventore et dolor dicta enim deserunt ipsa dolore exercitationem.&quot;
+    },
+    {
+        &quot;id&quot;: 11,
+        &quot;name&quot;: &quot;At quo repudiandae placeat. Occaecati quidem deleniti eaque recusandae. Dignissimos reprehenderit itaque ut vero. Iure ut eos aut.&quot;,
+        &quot;description&quot;: &quot;Praesentium eos quaerat qui. Rerum aperiam nostrum minus. Laborum quidem id qui fugit pariatur.&quot;
+    },
+    {
+        &quot;id&quot;: 12,
+        &quot;name&quot;: &quot;Nihil laudantium laboriosam ea animi. Quo corporis temporibus delectus molestiae. Quae dolore id ea est molestiae quia. Delectus quia ducimus dicta rerum qui nobis id. Totam sit rerum dolore qui.&quot;,
+        &quot;description&quot;: &quot;Corporis debitis ipsam architecto sed qui. Aut exercitationem odit ut et. Fuga voluptatem reprehenderit est ullam ratione fuga. Qui error quia perspiciatis.&quot;
+    },
+    {
+        &quot;id&quot;: 13,
+        &quot;name&quot;: &quot;At ut voluptas sunt necessitatibus corrupti voluptas vel. Similique ut eos sequi porro. Voluptatibus sapiente minus ad nihil sit est. Omnis fugit autem ad minus.&quot;,
+        &quot;description&quot;: &quot;Occaecati vel nesciunt est totam dolores earum quae omnis. Et et neque et veniam itaque.&quot;
+    },
+    {
+        &quot;id&quot;: 14,
+        &quot;name&quot;: &quot;Atque quam totam ipsum sequi eligendi est pariatur. Nesciunt voluptate natus sed vel ullam. Natus odio dolor ratione.&quot;,
+        &quot;description&quot;: &quot;Tenetur ea suscipit sint aut. Unde rerum consequatur quod ut hic sit saepe. Quae laboriosam architecto dolor quasi. Dolores eveniet repellendus sunt. Eaque repellat error omnis ab eum est facilis.&quot;
+    },
+    {
+        &quot;id&quot;: 15,
+        &quot;name&quot;: &quot;Quidem quisquam ut architecto odio qui aut iste. Minima dolor minima sit natus. Tempora voluptatum sequi eos maiores. Earum tenetur quos et deleniti odit iure.&quot;,
+        &quot;description&quot;: &quot;Asperiores alias ratione aut est laudantium quibusdam. Sunt amet quam vel eveniet. Ut in expedita magni quo sit eligendi. Unde fugiat nulla nemo delectus aut.&quot;
+    }
+]</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-v1-categories" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-v1-categories"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-v1-categories"></code></pre>
+</span>
+<span id="execution-error-GETapi-v1-categories" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-v1-categories"></code></pre>
+</span>
+<form id="form-GETapi-v1-categories" data-method="GET"
+      data-path="api/v1/categories"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-v1-categories', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-v1-categories"
+                    onclick="tryItOut('GETapi-v1-categories');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-v1-categories"
+                    onclick="cancelTryOut('GETapi-v1-categories');" hidden>Cancel
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-v1-categories" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/v1/categories</code></b>
+        </p>
+                    </form>
+
+            <h2 id="endpoints-POSTapi-v1-categories">Store a newly created resource in storage.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-POSTapi-v1-categories">
+<blockquote>Example request:</blockquote>
+
+
+<pre><code class="language-bash">curl --request POST \
+    "http://apitest.test/api/v1/categories" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre>
+
+<pre><code class="language-javascript">const url = new URL(
+    "http://apitest.test/api/v1/categories"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "POST",
+    headers,
+}).then(response =&gt; response.json());</code></pre>
+</span>
+
+<span id="example-responses-POSTapi-v1-categories">
+</span>
+<span id="execution-results-POSTapi-v1-categories" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-POSTapi-v1-categories"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-v1-categories"></code></pre>
+</span>
+<span id="execution-error-POSTapi-v1-categories" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTapi-v1-categories"></code></pre>
+</span>
+<form id="form-POSTapi-v1-categories" data-method="POST"
+      data-path="api/v1/categories"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('POSTapi-v1-categories', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-POSTapi-v1-categories"
+                    onclick="tryItOut('POSTapi-v1-categories');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-POSTapi-v1-categories"
+                    onclick="cancelTryOut('POSTapi-v1-categories');" hidden>Cancel
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-POSTapi-v1-categories" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-black">POST</small>
+            <b><code>api/v1/categories</code></b>
+        </p>
+                    </form>
+
+            <h2 id="endpoints-GETapi-v1-categories--id-">Display the specified resource.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETapi-v1-categories--id-">
+<blockquote>Example request:</blockquote>
+
+
+<pre><code class="language-bash">curl --request GET \
+    --get "http://apitest.test/api/v1/categories/8" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre>
+
+<pre><code class="language-javascript">const url = new URL(
+    "http://apitest.test/api/v1/categories/8"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre>
+</span>
+
+<span id="example-responses-GETapi-v1-categories--id-">
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary>
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 58
+access-control-allow-origin: *
+ </code></pre>
+        </details>         <pre>
+
+<code class="language-json">{
+    &quot;id&quot;: 1,
+    &quot;name&quot;: &quot;Est animi dolorem cum minima ut qui. Enim ducimus fuga a dolorum velit. Perferendis quas ut aut provident. Fuga aliquam et alias.&quot;,
+    &quot;description&quot;: &quot;Et vel consectetur omnis corrupti delectus. Dolorem quia sit consequatur tenetur modi architecto autem. Assumenda in vero aut minima laborum qui iste.&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-v1-categories--id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-v1-categories--id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-v1-categories--id-"></code></pre>
+</span>
+<span id="execution-error-GETapi-v1-categories--id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-v1-categories--id-"></code></pre>
+</span>
+<form id="form-GETapi-v1-categories--id-" data-method="GET"
+      data-path="api/v1/categories/{id}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-v1-categories--id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-v1-categories--id-"
+                    onclick="tryItOut('GETapi-v1-categories--id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-v1-categories--id-"
+                    onclick="cancelTryOut('GETapi-v1-categories--id-');" hidden>Cancel
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-v1-categories--id-" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/v1/categories/{id}</code></b>
+        </p>
+                    <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <p>
+                <b><code>id</code></b>&nbsp;&nbsp;<small>integer</small>  &nbsp;
+                <input type="number"
+               name="id"
+               data-endpoint="GETapi-v1-categories--id-"
+               data-component="url" required  hidden>
+    <br>
+<p>The ID of the category.</p>            </p>
+                    </form>
+
+            <h2 id="endpoints-PUTapi-v1-categories--id-">Update the specified resource in storage.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-PUTapi-v1-categories--id-">
+<blockquote>Example request:</blockquote>
+
+
+<pre><code class="language-bash">curl --request PUT \
+    "http://apitest.test/api/v1/categories/15" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre>
+
+<pre><code class="language-javascript">const url = new URL(
+    "http://apitest.test/api/v1/categories/15"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "PUT",
+    headers,
+}).then(response =&gt; response.json());</code></pre>
+</span>
+
+<span id="example-responses-PUTapi-v1-categories--id-">
+</span>
+<span id="execution-results-PUTapi-v1-categories--id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-PUTapi-v1-categories--id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-PUTapi-v1-categories--id-"></code></pre>
+</span>
+<span id="execution-error-PUTapi-v1-categories--id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-PUTapi-v1-categories--id-"></code></pre>
+</span>
+<form id="form-PUTapi-v1-categories--id-" data-method="PUT"
+      data-path="api/v1/categories/{id}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('PUTapi-v1-categories--id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-PUTapi-v1-categories--id-"
+                    onclick="tryItOut('PUTapi-v1-categories--id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-PUTapi-v1-categories--id-"
+                    onclick="cancelTryOut('PUTapi-v1-categories--id-');" hidden>Cancel
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-PUTapi-v1-categories--id-" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-darkblue">PUT</small>
+            <b><code>api/v1/categories/{id}</code></b>
+        </p>
+            <p>
+            <small class="badge badge-purple">PATCH</small>
+            <b><code>api/v1/categories/{id}</code></b>
+        </p>
+                    <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <p>
+                <b><code>id</code></b>&nbsp;&nbsp;<small>integer</small>  &nbsp;
+                <input type="number"
+               name="id"
+               data-endpoint="PUTapi-v1-categories--id-"
+               data-component="url" required  hidden>
+    <br>
+<p>The ID of the category.</p>            </p>
+                    </form>
+
+            <h2 id="endpoints-DELETEapi-v1-categories--id-">Remove the specified resource from storage.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-DELETEapi-v1-categories--id-">
+<blockquote>Example request:</blockquote>
+
+
+<pre><code class="language-bash">curl --request DELETE \
+    "http://apitest.test/api/v1/categories/1" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre>
+
+<pre><code class="language-javascript">const url = new URL(
+    "http://apitest.test/api/v1/categories/1"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "DELETE",
+    headers,
+}).then(response =&gt; response.json());</code></pre>
+</span>
+
+<span id="example-responses-DELETEapi-v1-categories--id-">
+</span>
+<span id="execution-results-DELETEapi-v1-categories--id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-DELETEapi-v1-categories--id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-DELETEapi-v1-categories--id-"></code></pre>
+</span>
+<span id="execution-error-DELETEapi-v1-categories--id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-DELETEapi-v1-categories--id-"></code></pre>
+</span>
+<form id="form-DELETEapi-v1-categories--id-" data-method="DELETE"
+      data-path="api/v1/categories/{id}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('DELETEapi-v1-categories--id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-DELETEapi-v1-categories--id-"
+                    onclick="tryItOut('DELETEapi-v1-categories--id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-DELETEapi-v1-categories--id-"
+                    onclick="cancelTryOut('DELETEapi-v1-categories--id-');" hidden>Cancel
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-DELETEapi-v1-categories--id-" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-red">DELETE</small>
+            <b><code>api/v1/categories/{id}</code></b>
+        </p>
+                    <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <p>
+                <b><code>id</code></b>&nbsp;&nbsp;<small>integer</small>  &nbsp;
+                <input type="number"
+               name="id"
+               data-endpoint="DELETEapi-v1-categories--id-"
+               data-component="url" required  hidden>
+    <br>
+<p>The ID of the category.</p>            </p>
+                    </form>
+
+            <h2 id="endpoints-GETapi-v1-books">Display a listing of the resource.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETapi-v1-books">
+<blockquote>Example request:</blockquote>
+
+
+<pre><code class="language-bash">curl --request GET \
+    --get "http://apitest.test/api/v1/books" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre>
+
+<pre><code class="language-javascript">const url = new URL(
+    "http://apitest.test/api/v1/books"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre>
+</span>
+
+<span id="example-responses-GETapi-v1-books">
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary>
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 57
+access-control-allow-origin: *
+ </code></pre>
+        </details>         <pre>
+
+<code class="language-json">{
+    &quot;data&quot;: [
+        {
+            &quot;id&quot;: 1,
+            &quot;name&quot;: &quot;Natus velit nihil.&quot;,
+            &quot;description&quot;: &quot;Vero iste molestiae cumque possimus quo inventore beatae. Voluptatum eum expedita est enim. Pariatur et nisi reiciendis asperiores.&quot;,
+            &quot;ISBN&quot;: &quot;9795621972515&quot;
+        },
+        {
+            &quot;id&quot;: 2,
+            &quot;name&quot;: &quot;Eum voluptas.&quot;,
+            &quot;description&quot;: &quot;Perferendis ullam sed eligendi dolorem qui non aspernatur. Quidem natus tempora non omnis laboriosam temporibus. Culpa et earum debitis modi.&quot;,
+            &quot;ISBN&quot;: &quot;9793111699096&quot;
+        },
+        {
+            &quot;id&quot;: 3,
+            &quot;name&quot;: &quot;Ad ea aut hic odit.&quot;,
+            &quot;description&quot;: &quot;Voluptas praesentium provident non provident id. Dolores natus consectetur itaque neque nemo sunt. Eveniet quisquam animi architecto illum ut exercitationem. Nisi nostrum sit et.&quot;,
+            &quot;ISBN&quot;: &quot;9784316761756&quot;
+        },
+        {
+            &quot;id&quot;: 4,
+            &quot;name&quot;: &quot;Ad rerum ut alias.&quot;,
+            &quot;description&quot;: &quot;Explicabo nulla impedit corporis officia enim. Ducimus tempore cupiditate ut non. Assumenda dolores quos exercitationem sed. Vitae id architecto sapiente fuga.&quot;,
+            &quot;ISBN&quot;: &quot;9784995509199&quot;
+        },
+        {
+            &quot;id&quot;: 5,
+            &quot;name&quot;: &quot;Non deleniti ea.&quot;,
+            &quot;description&quot;: &quot;Laudantium magni sint quis nostrum repudiandae. Fuga dolores cumque blanditiis molestias tempore illum. Sint molestiae nemo dolor ex. Omnis voluptates quo soluta quas.&quot;,
+            &quot;ISBN&quot;: &quot;9794564871794&quot;
+        },
+        {
+            &quot;id&quot;: 6,
+            &quot;name&quot;: &quot;Voluptas.&quot;,
+            &quot;description&quot;: &quot;Voluptas molestias est totam in magni corporis. Voluptatem cumque est minus magni nam non velit. Provident molestiae qui magnam deleniti dicta consectetur.&quot;,
+            &quot;ISBN&quot;: &quot;9782111454675&quot;
+        },
+        {
+            &quot;id&quot;: 7,
+            &quot;name&quot;: &quot;Nam aut est aliquam.&quot;,
+            &quot;description&quot;: &quot;Est inventore ipsum veritatis voluptas. Iusto dolor quae nesciunt ut. Voluptatem autem illum aut consectetur et. Voluptate aut iste veritatis quis et.&quot;,
+            &quot;ISBN&quot;: &quot;9796909296842&quot;
+        },
+        {
+            &quot;id&quot;: 8,
+            &quot;name&quot;: &quot;Animi inventore.&quot;,
+            &quot;description&quot;: &quot;Quo illum aut vel vel nostrum. Porro quae dolorem consequatur vitae. Quisquam neque deleniti ducimus. In quas voluptatem porro laborum.&quot;,
+            &quot;ISBN&quot;: &quot;9791711259689&quot;
+        },
+        {
+            &quot;id&quot;: 9,
+            &quot;name&quot;: &quot;Ad corporis.&quot;,
+            &quot;description&quot;: &quot;Omnis qui vitae dolores iusto quasi dolores eligendi atque. Neque deserunt ex sit sed aliquid saepe aspernatur ipsa. Assumenda veritatis laboriosam qui alias.&quot;,
+            &quot;ISBN&quot;: &quot;9785779881784&quot;
+        },
+        {
+            &quot;id&quot;: 10,
+            &quot;name&quot;: &quot;Explicabo tempora.&quot;,
+            &quot;description&quot;: &quot;Minus aspernatur laudantium quos. Ab sapiente rem perspiciatis atque. Velit minus laudantium aut. Est ipsa sed enim delectus ducimus aspernatur. Fugiat ea quis eum et quia.&quot;,
+            &quot;ISBN&quot;: &quot;9794481073523&quot;
+        },
+        {
+            &quot;id&quot;: 11,
+            &quot;name&quot;: &quot;Quis voluptates.&quot;,
+            &quot;description&quot;: &quot;Omnis ad et nulla aliquid. Magnam neque dolores expedita possimus provident. Ut voluptates aliquam non molestiae.&quot;,
+            &quot;ISBN&quot;: &quot;9781719048897&quot;
+        },
+        {
+            &quot;id&quot;: 12,
+            &quot;name&quot;: &quot;Qui repellendus.&quot;,
+            &quot;description&quot;: &quot;Vero possimus reiciendis blanditiis. Ipsum vel eligendi at nisi reprehenderit incidunt qui. Qui temporibus nihil ullam est. Blanditiis eius dolor magnam.&quot;,
+            &quot;ISBN&quot;: &quot;9795271847447&quot;
+        },
+        {
+            &quot;id&quot;: 13,
+            &quot;name&quot;: &quot;Quam et nesciunt.&quot;,
+            &quot;description&quot;: &quot;Quod voluptatem cupiditate corrupti vero porro fugit. Aliquam eum quia voluptatem sunt sunt. Eos accusamus commodi recusandae nulla aperiam.&quot;,
+            &quot;ISBN&quot;: &quot;9788664561303&quot;
+        },
+        {
+            &quot;id&quot;: 14,
+            &quot;name&quot;: &quot;Ea est doloribus.&quot;,
+            &quot;description&quot;: &quot;Sapiente nisi vel esse deserunt placeat rerum. Dolores et corporis mollitia molestiae. Voluptatem minus amet quia repudiandae vel.&quot;,
+            &quot;ISBN&quot;: &quot;9793287398991&quot;
+        },
+        {
+            &quot;id&quot;: 15,
+            &quot;name&quot;: &quot;Similique placeat.&quot;,
+            &quot;description&quot;: &quot;Voluptates sint et occaecati. Unde aut inventore quis ut at voluptatem.&quot;,
+            &quot;ISBN&quot;: &quot;9782599673414&quot;
+        }
+    ],
+    &quot;links&quot;: {
+        &quot;first&quot;: &quot;http:\/\/apitest.test\/api\/v1\/books?page=1&quot;,
+        &quot;last&quot;: &quot;http:\/\/apitest.test\/api\/v1\/books?page=2&quot;,
+        &quot;prev&quot;: null,
+        &quot;next&quot;: &quot;http:\/\/apitest.test\/api\/v1\/books?page=2&quot;
+    },
+    &quot;meta&quot;: {
+        &quot;current_page&quot;: 1,
+        &quot;from&quot;: 1,
+        &quot;last_page&quot;: 2,
+        &quot;links&quot;: [
+            {
+                &quot;url&quot;: null,
+                &quot;label&quot;: &quot;&amp;laquo; Previous&quot;,
+                &quot;active&quot;: false
+            },
+            {
+                &quot;url&quot;: &quot;http:\/\/apitest.test\/api\/v1\/books?page=1&quot;,
+                &quot;label&quot;: &quot;1&quot;,
+                &quot;active&quot;: true
+            },
+            {
+                &quot;url&quot;: &quot;http:\/\/apitest.test\/api\/v1\/books?page=2&quot;,
+                &quot;label&quot;: &quot;2&quot;,
+                &quot;active&quot;: false
+            },
+            {
+                &quot;url&quot;: &quot;http:\/\/apitest.test\/api\/v1\/books?page=2&quot;,
+                &quot;label&quot;: &quot;Next &amp;raquo;&quot;,
+                &quot;active&quot;: false
+            }
+        ],
+        &quot;path&quot;: &quot;http:\/\/apitest.test\/api\/v1\/books&quot;,
+        &quot;per_page&quot;: 15,
+        &quot;to&quot;: 15,
+        &quot;total&quot;: 20
+    }
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-v1-books" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-v1-books"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-v1-books"></code></pre>
+</span>
+<span id="execution-error-GETapi-v1-books" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-v1-books"></code></pre>
+</span>
+<form id="form-GETapi-v1-books" data-method="GET"
+      data-path="api/v1/books"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-v1-books', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-v1-books"
+                    onclick="tryItOut('GETapi-v1-books');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-v1-books"
+                    onclick="cancelTryOut('GETapi-v1-books');" hidden>Cancel
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-v1-books" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/v1/books</code></b>
+        </p>
+                    </form>
+
+            <h2 id="endpoints-POSTapi-v1-books">Store a newly created resource in storage.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-POSTapi-v1-books">
+<blockquote>Example request:</blockquote>
+
+
+<pre><code class="language-bash">curl --request POST \
+    "http://apitest.test/api/v1/books" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre>
+
+<pre><code class="language-javascript">const url = new URL(
+    "http://apitest.test/api/v1/books"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "POST",
+    headers,
+}).then(response =&gt; response.json());</code></pre>
+</span>
+
+<span id="example-responses-POSTapi-v1-books">
+</span>
+<span id="execution-results-POSTapi-v1-books" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-POSTapi-v1-books"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-v1-books"></code></pre>
+</span>
+<span id="execution-error-POSTapi-v1-books" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTapi-v1-books"></code></pre>
+</span>
+<form id="form-POSTapi-v1-books" data-method="POST"
+      data-path="api/v1/books"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('POSTapi-v1-books', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-POSTapi-v1-books"
+                    onclick="tryItOut('POSTapi-v1-books');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-POSTapi-v1-books"
+                    onclick="cancelTryOut('POSTapi-v1-books');" hidden>Cancel
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-POSTapi-v1-books" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-black">POST</small>
+            <b><code>api/v1/books</code></b>
+        </p>
+                    </form>
+
+            <h2 id="endpoints-GETapi-v1-books--id-">Display the specified resource.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETapi-v1-books--id-">
+<blockquote>Example request:</blockquote>
+
+
+<pre><code class="language-bash">curl --request GET \
+    --get "http://apitest.test/api/v1/books/19" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre>
+
+<pre><code class="language-javascript">const url = new URL(
+    "http://apitest.test/api/v1/books/19"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre>
+</span>
+
+<span id="example-responses-GETapi-v1-books--id-">
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary>
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 56
+access-control-allow-origin: *
+ </code></pre>
+        </details>         <pre>
+
+<code class="language-json">{
+    &quot;id&quot;: 1,
+    &quot;name&quot;: &quot;Natus velit nihil.&quot;,
+    &quot;description&quot;: &quot;Vero iste molestiae cumque possimus quo inventore beatae. Voluptatum eum expedita est enim. Pariatur et nisi reiciendis asperiores.&quot;,
+    &quot;ISBN&quot;: &quot;9795621972515&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-v1-books--id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-v1-books--id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-v1-books--id-"></code></pre>
+</span>
+<span id="execution-error-GETapi-v1-books--id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-v1-books--id-"></code></pre>
+</span>
+<form id="form-GETapi-v1-books--id-" data-method="GET"
+      data-path="api/v1/books/{id}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-v1-books--id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-v1-books--id-"
+                    onclick="tryItOut('GETapi-v1-books--id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-v1-books--id-"
+                    onclick="cancelTryOut('GETapi-v1-books--id-');" hidden>Cancel
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-v1-books--id-" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/v1/books/{id}</code></b>
+        </p>
+                    <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <p>
+                <b><code>id</code></b>&nbsp;&nbsp;<small>integer</small>  &nbsp;
+                <input type="number"
+               name="id"
+               data-endpoint="GETapi-v1-books--id-"
+               data-component="url" required  hidden>
+    <br>
+<p>The ID of the book.</p>            </p>
+                    </form>
+
+            <h2 id="endpoints-PUTapi-v1-books--id-">Update the specified resource in storage.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-PUTapi-v1-books--id-">
+<blockquote>Example request:</blockquote>
+
+
+<pre><code class="language-bash">curl --request PUT \
+    "http://apitest.test/api/v1/books/5" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre>
+
+<pre><code class="language-javascript">const url = new URL(
+    "http://apitest.test/api/v1/books/5"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "PUT",
+    headers,
+}).then(response =&gt; response.json());</code></pre>
+</span>
+
+<span id="example-responses-PUTapi-v1-books--id-">
+</span>
+<span id="execution-results-PUTapi-v1-books--id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-PUTapi-v1-books--id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-PUTapi-v1-books--id-"></code></pre>
+</span>
+<span id="execution-error-PUTapi-v1-books--id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-PUTapi-v1-books--id-"></code></pre>
+</span>
+<form id="form-PUTapi-v1-books--id-" data-method="PUT"
+      data-path="api/v1/books/{id}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('PUTapi-v1-books--id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-PUTapi-v1-books--id-"
+                    onclick="tryItOut('PUTapi-v1-books--id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-PUTapi-v1-books--id-"
+                    onclick="cancelTryOut('PUTapi-v1-books--id-');" hidden>Cancel
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-PUTapi-v1-books--id-" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-darkblue">PUT</small>
+            <b><code>api/v1/books/{id}</code></b>
+        </p>
+            <p>
+            <small class="badge badge-purple">PATCH</small>
+            <b><code>api/v1/books/{id}</code></b>
+        </p>
+                    <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <p>
+                <b><code>id</code></b>&nbsp;&nbsp;<small>integer</small>  &nbsp;
+                <input type="number"
+               name="id"
+               data-endpoint="PUTapi-v1-books--id-"
+               data-component="url" required  hidden>
+    <br>
+<p>The ID of the book.</p>            </p>
+                    </form>
+
+            <h2 id="endpoints-DELETEapi-v1-books--id-">Remove the specified resource from storage.</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-DELETEapi-v1-books--id-">
+<blockquote>Example request:</blockquote>
+
+
+<pre><code class="language-bash">curl --request DELETE \
+    "http://apitest.test/api/v1/books/2" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre>
+
+<pre><code class="language-javascript">const url = new URL(
+    "http://apitest.test/api/v1/books/2"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "DELETE",
+    headers,
+}).then(response =&gt; response.json());</code></pre>
+</span>
+
+<span id="example-responses-DELETEapi-v1-books--id-">
+</span>
+<span id="execution-results-DELETEapi-v1-books--id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-DELETEapi-v1-books--id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-DELETEapi-v1-books--id-"></code></pre>
+</span>
+<span id="execution-error-DELETEapi-v1-books--id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-DELETEapi-v1-books--id-"></code></pre>
+</span>
+<form id="form-DELETEapi-v1-books--id-" data-method="DELETE"
+      data-path="api/v1/books/{id}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      data-headers='{"Content-Type":"application\/json","Accept":"application\/json"}'
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('DELETEapi-v1-books--id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-DELETEapi-v1-books--id-"
+                    onclick="tryItOut('DELETEapi-v1-books--id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-DELETEapi-v1-books--id-"
+                    onclick="cancelTryOut('DELETEapi-v1-books--id-');" hidden>Cancel
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-DELETEapi-v1-books--id-" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-red">DELETE</small>
+            <b><code>api/v1/books/{id}</code></b>
+        </p>
+                    <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <p>
+                <b><code>id</code></b>&nbsp;&nbsp;<small>integer</small>  &nbsp;
+                <input type="number"
+               name="id"
+               data-endpoint="DELETEapi-v1-books--id-"
+               data-component="url" required  hidden>
+    <br>
+<p>The ID of the book.</p>            </p>
+                    </form>
+
+    
+
+        
+    </div>
+    <div class="dark-box">
+                    <div class="lang-selector">
+                                    <a href="#" data-language-name="bash">bash</a>
+                                    <a href="#" data-language-name="javascript">javascript</a>
+                            </div>
+            </div>
+</div>
+<script>
+    $(function () {
+        var exampleLanguages = ["bash","javascript"];
+        setupLanguages(exampleLanguages);
+    });
+</script>
+</body>
+</html>
